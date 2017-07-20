@@ -1,0 +1,53 @@
+$text-color-link: #2cc76a;
+$color-link-hover: #ca0dc8;
+$color-link-active: #44604f;
+$font-family-regular: "HelveticaRegular", sans-serif;
+
+body {
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	color: $text-color-link;
+	cursor: pointer;
+
+	&:hover {
+		color: $color-link-hover;
+	}
+
+	&:active {
+		color: $color-link-active;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+img {
+  	display: inline-block;
+  	font-family: $font-family-regular;
+  	//height: auto;
+  	position: relative;
+	text-align: center;
+	//width: 100%;
+
+  &::before {
+  	content: "Упс, изображение ниже поломалось :(";
+  	display: block;
+  	margin-bottom: 10px;
+  }
+
+  &::after {
+  	content: "(url: " attr(src) ")";
+  	display: block;
+  	font-size: 12px; 
+  }
+}

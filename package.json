@@ -4,7 +4,8 @@
   "description": "html-webpage",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "normalize.scss": "^0.1.0"
   },
   "devDependencies": {
     "browser-sync": "^2.18.12",
@@ -15,7 +16,8 @@
     "gulp-imagemin": "^3.3.0",
     "gulp-sass": "^3.1.0",
     "gulp-tinypng": "^1.0.2",
-    "gulp-watch": "^4.3.11"
+    "gulp-watch": "^4.3.11",
+    "gulp.spritesmith": "^6.5.1"
   },
   "scripts": {
     "gulp": "gulp"
