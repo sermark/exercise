@@ -4,8 +4,19 @@ $logincolor: #9ba4ae;
 $mobile-widths: 950px;
 $font-family-bold: "HelveticaBold", sans-serif;
 
+
+
+.mfp-bg,
+.mfp-ready,
+.mfp-wrap {
+	-webkit-overflow-scrolling: touch;
+}
+
 .page-header {
-	width: auto;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	width: 100%;
 	height: auto;
 	background-color: $headcolor;
 }
